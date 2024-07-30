@@ -1,0 +1,27 @@
+#headerH{
+    color: white;
+    text-align: center;
+}
+
+header{
+    background-color: #701C1C;
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.headerLink{
+    color: #00A693;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    text-align: center;
+}
+
+h1{
+    margin-top: 0;
+}
