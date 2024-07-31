@@ -1,21 +1,43 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 103, 165, 0.4);
+}
+
 #headerH{
     color: white;
     text-align: center;
+    font-family: Merriweather;
 }
 
 header{
-    background-color: #701C1C;
+    background-color: rgb(0, 103, 165, 0.8);
     padding: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    position: relative;
+    left: 0%;
+    top: 0%;
 }
 
 .headerLink{
-    color: #00A693;
+    color: #D99058;
     font-size: 20px;
-    display: flex;
-    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-decoration: none;
+    font-family: Merriweather;
+}
+  
+.headerLink:hover{
+    font-size: 25px;
+    color: #8C4107;
+    font-family: Merriweather;
+}
+
+#headerNavigation{
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 
 nav{
@@ -24,4 +46,84 @@ nav{
 
 h1{
     margin-top: 0;
+}
+
+.footerLink{
+    color: #D99058;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-family: Merriweather;
+}
+
+.footerLink:hover{
+    font-size: 25px;
+    color: #8C4107;
+    font-family: Merriweather;
+}
+
+
+
+#contactMe{
+    background-color: rgb(0, 103, 165, 0.8);
+    position: relative; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 70px;
+    grid-template-areas: 
+    'aboutMe .'
+    '. education'
+    'experience experience'
+    ;
+}
+
+
+#experience1{
+    display: grid;
+    grid-template-areas: 
+    'exp exi'
+    ;
+}
+
+
+#ExP{
+    grid-area: exp;
+}
+
+#ExI{
+    grid-area: exi;
+}
+
+p{
+    font-size: 20px;
+    font-family: Merriweather;
+}
+
+
+
+#aboutMe{
+    grid-area: aboutMe;
+}
+
+#education{
+    grid-area: education;
+}
+
+#experience{
+    grid-area: experience;
+}
+
+#contactMe{
+    grid-area: contactMe;
 }
