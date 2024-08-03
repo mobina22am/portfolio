@@ -11,15 +11,19 @@ header{
     padding: 20px;
 }
 
-.bx bxl-codespan{
-    color: red;
-    size: 30px;
-}
 
 #menu{
     color: white;
     margin-bottom: 0%;
+    font-size: 40px;
 }
+
+
+#menuButton{
+    background-color: black;
+    border: 0;
+}
+
 
 #headerH{
     color: white;

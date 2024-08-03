@@ -5,23 +5,56 @@
     <head>
         <title>Portfolio Page</title>
         <meta charset="UTF-8">
+        <script src="main.js"></script>
         <link rel="stylesheet" href="main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <script src="main.js"></script>
     </head>
-    
+
     <body>
-        <header>
+        <header id="heading">
             <h1 id="headerH">MOBINA AGHAEIMALEKI</h1>
     
             <div id="headerContent">
 
                 <i class="bx bx-menu bx-lg" id="menu"></i>
 
+                <script>
+                    let menu = document.getElementById('menu');
+
+                    menu.addEventListener('click', menuClicked);
+
+                    function menuClicked(){
+                        let div = document.getElementById("headerContent")
+                        let navigation = document.getElementById("headerNavigation")
+                        let returnSign = document.createElement("i")
+                        let newPage = document.createElement("div")
+                        let images = document.getElementById('headerImage')
+
+                        newPage.setAttribute("id", "navigationPage")
+                        div.insertBefore(newPage, images)
+                        newPage.style.length = "100%"
+                        newPage.style.height = "100%"
+
+
+
+                        returnSign.setAttribute("class", "bx bx-arrow-back")
+                        returnSign.style.fontSize = "40px"
+                        returnSign.style.color = "white";
+
+                        navigation.style.visibility = "visible"
+                        
+                        div.insertBefore(returnSign, navigation)
+
+                        menu.remove();
+                    }
+
+                </script>
+
+                
                 <div id="headerNavigation">
                     <nav>
                         <a class="headerLink" href="#aboutMe">ABOUT</a>
