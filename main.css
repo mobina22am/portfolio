@@ -19,11 +19,10 @@ header{
 }
 
 
-#menuButton{
-    background-color: black;
-    border: 0;
+#navigationPage{
+    height: 100%;
+    width: 100%;
 }
-
 
 #headerH{
     color: white;
@@ -34,6 +33,7 @@ header{
 #headerImage{
     display: grid;
     grid-template-areas: 'img1 img2';
+    margin-top: 25px;
 }
 
 
@@ -50,9 +50,9 @@ header{
     height: 650px;
     margin-top: 0%;
     grid-area: img2;
-    position: absolute;
-    left: 50%;
-    top: 30%;
+    position: relative;
+    top: 5%;
+    right: 15%;
 }
 
 
