@@ -1,0 +1,75 @@
+/**/
+body{
+    background-color: black;
+}
+
+/* each of the a in the header navigation*/
+.headerLink{
+    text-decoration: none;
+    margin-right: 120px;
+    margin-left: 120px;
+    color: orange;
+    font-size: 20px;
+}
+
+/*each of the 'a' in the header navigation with hover*/
+.headerLink:hover{
+    color: red;
+    font-size: 25px;
+}
+
+/*ul element of the header navigation*/
+#headerList{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/*h1 at the top of the page*/
+#toph1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+/*figure for the header images*/
+#headerImages{
+    display: grid;
+    grid-template-areas: 'img1 img2';
+}
+
+/*first image in the header*/
+#img1{
+    width: 750px;
+    height: 750px;
+    margin-top: 0%;
+    grid-area: img1;
+}
+
+/*second image in the header*/
+#img2{
+    width: 650px;
+    height: 650px;
+    margin-top: 0%;
+    grid-area: img2;
+    position: relative;
+    top: 6%;
+    right: 15%;
+}
+
+/*div for the images in the header*/
+#headerImageDiv{
+    margin-top: 50px;
+}
+
+/**/
+
+
+
+
+/**/
+/**/
+/**/
+/**/
+/**/
