@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="main2.css">
         <script src="main.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -14,6 +14,13 @@
     </head>
     
     <body>
+        <div class="circle">
+            <svg viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M75,100 C88.8071187,100 100,88.8071187 100,75 C100,61.1928813 88.8071187,50 75,50 C61.1928813,50 50,61.1928813 50,75 C50,88.8071187 61.1928813,100 75,100 Z"></path>
+            </svg>
+        </div>
+
+
         <header>
             <h1 id="toph1">Mobina Aghaeimaleki</h1>
 
@@ -68,7 +75,7 @@
                         <p> add the uni projects</p>
                     </div>
 
-                    <div id="experienceFig">
+                    <div id="experienceDiv">
                         <figure id="experienceImage">
                             <img src="JPMorgan.png">
                             <img src="2.png">
@@ -85,9 +92,20 @@
         <footer>
             <nav>
                 <ul id="footerList">
-                    <li><a class="footerLink" href="https://www.linkedin.com/in/mobina-aghaeimaleki-360a57259/">LINKEDIN</a></li>
-                    <li><a class="footerLink" href="mailto://mobina.aghaeimaleki@outlook.com">EMAIL</a></li>
-                    <li><a class="footerLink" href="https://github.com/mobina22am">GITHUB</a></li>
+                    <li class="footerLi">
+                        <i class='bx bxl-linkedin bx-lg' id="footerI1"></i>
+                        <a id="footerA1" class="footerLink" href="https://www.linkedin.com/in/mobina-aghaeimaleki-360a57259/">LINKEDIN</a>
+                    </li>
+
+                    <li class="footerLi">
+                        <i class='bx bx-envelope bx-lg' id="footerI2"></i>
+                        <a id="footerA2" class="footerLink" href="mailto://mobina.aghaeimaleki@outlook.com">EMAIL</a>
+                    </li>
+
+                    <li class="footerLi">
+                        <i class='bx bxl-github bx-lg' id="footerI3"></i>
+                        <a id="footerA3" class="footerLink" href="https://github.com/mobina22am">GITHUB</a>
+                    </li>
                 </ul>
             </nav>
         </footer>

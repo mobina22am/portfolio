@@ -1,13 +1,82 @@
 /**/
+
+.circle {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    transform: translateX(-30px) translateY(-30px);
+    pointer-events: none;
+    z-index: 9999;
+    -webkit-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out;
+}
+.circle svg {
+    width: 100%;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: 600ms all cubic-bezier(.23,1,.32,1);
+    transition: 600ms all cubic-bezier(.23,1,.32,1);
+}
+
+.circle svg path {
+    width: 20px;
+    height: 20px;
+    fill: rgb(187,2,39);
+    -webkit-transition: 600ms all cubic-bezier(.23,1,.32,1);
+    transition: 600ms all cubic-bezier(.23,1,.32,1);
+}
+
+
+
+
+
+
+
+
+
+
+
 body{
     background-color: black;
 }
 
+/*h1 at the top of the page*/
+#toph1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(254,235,195);
+    animation: hanimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hanimation{
+    0% {color: rgb(254,235,195);}
+    50% {color: rgb(187,2,39);}
+    100% {color: rgb(254,235,195);}
+}
+
+
+
+#menu{
+    color: rgb(254,235,195);
+}
+
+#return{
+    color: rgb(254,235,195);
+    display: none;
+}
+
+
 /* each of the a in the header navigation*/
 .headerLink{
     text-decoration: none;
-    margin-right: 105px;
-    margin-left: 105px;
+    margin-left: 140px;
     font-size: 20px;
     background-color: rgb(187,2,39);
     border-radius: 30px;
@@ -37,39 +106,13 @@ body{
     display: none;
 }
 
-/*ul element of the footer*/
-#footerList{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
 
-/*each of the li element of the foooter*/
-.footerLink{
-    text-decoration: none;
-    margin-right: 170px;
-    margin-left: 170px;
-    color: black;
-    font-size: 20px;
-    background-color: rgb(187,2,39);
-    border-radius: 30px;
-    padding: 20px;
-    font-family: Merriweather;
-}
 
-.footerLink:hover{
-    color: rgb(254,235,195);
-    font-size: 25px;
-    font-family: Merriweather;
-}
 
-/*h1 at the top of the page*/
-#toph1{
-    text-align: center;
-    margin-bottom: 50px;
-    color: rgb(254,235,195);
-}
+
+
+
+
 
 /*figure for the header images*/
 #headerImages{
@@ -104,6 +147,11 @@ body{
     margin-top: 50px;
 }
 
+
+
+
+
+
 /*p in the html*/
 p{
     color: rgb(254,235,195);
@@ -112,10 +160,10 @@ p{
     font-family: Merriweather;
 }
 
-/*footer in the html*/
-footer{
-    margin-top: 150px;
-}
+
+
+
+
 
 /*section in the html*/
 section{
@@ -139,6 +187,13 @@ section{
     grid-area: education;
 }
 
+
+
+
+
+
+
+
 /*EXPERIENCE div*/
 #experience{
     grid-area: experience;
@@ -158,7 +213,7 @@ section{
 }
 
 /*SECOND DIV in the EXPERIENCE ARTICLE*/
-#experienceFig{
+#experienceDiv{
     grid-area: expimage;
 }
 
@@ -169,22 +224,72 @@ section{
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     background-color: rgb(254,235,195);
+    border-radius: 10%;
     justify-content: center;
     align-items: center;  
     grid-gap: 50px;
 }
 
+
+
 li{
     margin: 0;
 }
 
-#menu{
-    color: rgb(254,235,195);
+
+
+
+
+
+/*footer in the html*/
+footer{
+    margin-top: 150px;
 }
 
-#return{
+/*ul element of the footer*/
+#footerList{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/*app icons*/
+#footerList i{
+    color: rgb(187,2,39);
+}
+
+/*FOOTER A*/
+.footerLink{
+    text-decoration: none;
+    margin-right: 145px;
+    margin-left: 145px;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(187,2,39);
+    border-radius: 30px;
+    padding: 20px;
+    font-family: Merriweather;
+}
+
+/*FOOTER A*/
+.footerLink:hover{
     color: rgb(254,235,195);
-    display: none;
+    font-size: 25px;
+    font-family: Merriweather;
+}
+
+/*FOOTER LI*/
+.footerLi{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+}
+
+/*FOOTER I*/
+.footerLi i{
+    text-align: center;
+    margin-bottom: 20px;
 }
 /**/
 /**/
