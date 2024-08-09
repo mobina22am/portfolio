@@ -1,24 +1,4 @@
-var circle = document.querySelector('.circle')
-let whole = document.documentElement;
-
-whole.addEventListener('mousemove', moveCircle);
-
-function moveCircle(e) {
-  TweenLite.to(circle, 0.3, {
-    css: {
-      left: e.pageX,
-      top: e.pageY
-    }
-  });
-}
-
-
-
-
-
-
-
-
+let move = document.getElementById("move");
 let menu = document.getElementById('menu');
 let navigation = document.getElementById('headerNavigation');
 let returnS = document.getElementById('return');
@@ -44,6 +24,16 @@ menu.addEventListener('click', menuClicked);
 returnS.addEventListener('click', returnClicked);
 
 
+document.body.onpointermove = event => {
+    const { clientX, clientY } = event;
+
+    move.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+    
+    }, {duration: 1000, fill: "forwards"})
+
+}
 
 function menuClicked(){
     navigation.style.display = 'block';

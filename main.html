@@ -1,67 +1,59 @@
 <!DOCTYPE html>
 
-
 <html>
     <head>
-        <title>Portfolio Page</title>
-        <meta charset="UTF-8">
-        <script src="main.js"></script>
+        <title>this is the second attempt</title>
         <link rel="stylesheet" href="main.css">
+        <script src="main.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
-
+    
     <body>
-        <header id="heading">
-            <h1 id="headerH">MOBINA AGHAEIMALEKI</h1>
-    
-            <div id="headerContent">
+        <div id="move"></div>
 
-                <i class="bx bx-menu bx-lg" id="menu"></i>
 
-                <script>
-                    let menu = document.getElementById('menu');
-                    let div = document.getElementById("headerContent");
+        <header>
+            <h1 id="toph1">Mobina Aghaeimaleki</h1>
 
-                    menu.addEventListener('click', menuClicked);
-                    
-                </script>
+            <i class="bx bx-menu bx-lg" id="menu"></i>
+            <i class='bx bx-left-arrow-alt bx-lg' id="return"></i>
 
-                
-                <div id="headerNavigation">
-                    <nav>
-                        <a class="headerLink" href="#aboutMe">ABOUT</a>
-                        <a class="headerLink" href="#education">EDUCATION</a>
-                        <a class="headerLink" href="#experience">EXPERIENCE</a>
-                        <a class="headerLink" href="#contactMe">FIND ME</a>
-                    </nav>
-                </div>
-                
+            <div id="headerNavigation">
 
-                <figure id="headerImage">
-                    <img src="head.jpeg" id="headImg">
-                    <img src="head2.jpeg" id="headImg2">
-                </figure>
-
+                    <ul id="headerList">
+                        <li><a class="headerLink" href="#about">ABOUT</a></li>
+                        <li><a class="headerLink" href="#education">EDUCATION</a></li>
+                        <li><a class="headerLink" href="#experience">EXPERIENCE</a></li>
+                        <li><a class="headerLink" href="#footer">CONTACT</a></li>
+                    </ul>
+                </nav>
             </div>
-    
+
+            <div id="headerImageDiv">
+                <figure id="headerImages">
+                    <img src="./images/head.jpeg" id="img1">
+                    <img src="./images/head2.jpeg" id="img2">
+                </figure>
+            </div>
         </header>
 
+        <p id="copyRight">&copy; MOBINA AGHAEIMALEKI</p>
 
-    
         <section>
-            <div id="aboutMe">
+            <div id="about">
                 <article>
-                    <p>Mobina Aghaeimaleki</p>
-                    <p>
-                        Graduate software engineer based in London 
-                    </p>
+                    <p>Graduate software engineer based in London</p>
+                    <p>22 years old</p>
+                    <p>Fluent in 4 languages</p>
                 </article>
             </div>
-    
+
+
             <div id="education">
                 <article>
                     <p>Graduated from Queen Mary University of London with first class BSc in computer scinece</p>
@@ -69,46 +61,52 @@
                     <p>Owner of a silver medal in the UK chemistry challenge</p>
                 </article>
             </div>
-    
-    
+
             <div id="experience">
-                <article id="experience1">
-                    <div id="ExP">
+                <article id="experienceArticle">
+
+                    <div id="experienceText">
+
                         <p>JP morgan virtual work experince</p>
                         <p>I have to have at least a few more over here</p>
                         <p>some virtuals here</p>
-                        <p> just because I don't have no specific project right now I am going to add the uni projects as well</p>
+                        <p> add the uni projects</p>
                     </div>
-            
-                    <div id="ExI">
-                        <figure>
-                            <img src="JPMorgan.png" id="JP">
+
+                    <div id="experienceDiv">
+                        <figure id="experienceImage">
+                            <img src="./images/JPMorgan.png">
+                            <img src="./images/JPMorgan.png">
+                            <img src="./images/JPMorgan.png">
+                            <img src="./images/JPMorgan.png">
                         </figure>
 
-                        <figure>
-                            <img src="2.png" id="two">
-                        </figure>
-
-                        <figure>
-                            <img src="3.png" id="three3">
-                        </figure>
-
-                        <figure>
-                            <img src="4.png" id="four">
-                        </figure>
                     </div>
+
                 </article>
             </div>
-    
         </section>
-    
-    
-        <footer id="contactMe">
+
+        <footer id="footer">
             <nav>
-                <a class="footerLink" href="https://www.linkedin.com/in/mobina-aghaeimaleki-360a57259/">LINKEDIN</a>
-                <a class="footerLink" href="mailto://mobina.aghaeimaleki@outlook.com">EMAIL</a>
-                <a class="footerLink" href="https://github.com/mobina22am">GITHUB</a>
+                <ul id="footerList">
+                    <li class="footerLi">
+                        <i class='bx bxl-linkedin bx-lg' id="footerI1"></i>
+                        <a id="footerA1" class="footerLink" href="https://www.linkedin.com/in/mobina-aghaeimaleki-360a57259/">LINKEDIN</a>
+                    </li>
+
+                    <li class="footerLi">
+                        <i class='bx bx-envelope bx-lg' id="footerI2"></i>
+                        <a id="footerA2" class="footerLink" href="mailto://mobina.aghaeimaleki@outlook.com">EMAIL</a>
+                    </li>
+
+                    <li class="footerLi">
+                        <i class='bx bxl-github bx-lg' id="footerI3"></i>
+                        <a id="footerA3" class="footerLink" href="https://github.com/mobina22am">GITHUB</a>
+                    </li>
+                </ul>
             </nav>
         </footer>
     </body>
 </html>
+
