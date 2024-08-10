@@ -3,24 +3,69 @@ let modeButton = document.getElementById('mode');
 let modeText = document.getElementById('modeText');
 let modeCircle = document.getElementById('modeCircle');
 let body = document.getElementById('body');
-let h = document.getElementById('toph1');
+let texts = document.getElementsByTagName('p');
+let copyRight = document.getElementById('copyRight');
+let navlinks = document.getElementsByClassName('headerLink');
 let check = true;
 
 modeButton.addEventListener('click', modeChange);
 
 function modeChange(){
+
+
+    /*this is the LIGHT background*/
     if (check){
-        console.log(modeButton)
         modeButton.style.display = 'flex'
         body.style.backgroundColor = 'rgb(254,235,195)'
         document.documentElement.style.setProperty('--first', 'rgb(0,0,0)');
+        menu.style.color = 'rgb(187,2,39)';
+        returnS.style.color = 'rgb(187,2,39)';
+        link1.style.color = 'rgb(254,235,195)';
+        link2.style.color = 'rgb(254,235,195)';
+        link3.style.color = 'rgb(254,235,195)';
+        modeText.innerText = 'DARK';
+        modeText.style.color = 'black';
+        modeCircle.style.backgroundColor = 'black';
+
+        for(var i=0; i<texts.length; i++){
+            if (i > 1){
+                texts[i].style.color = 'black';
+            }
+        }
+
+        for(var i=0; i<navlinks.length; i++){
+             navlinks[i].style.color = 'rgb(254,235,195)';
+        }
+
 
         check = false
     }
 
+
+    /*this is the DARK background*/
     else{
         modeButton.style.display = 'grid'
         body.style.backgroundColor = 'black'
+        document.documentElement.style.setProperty('--first', 'rgb(254,235,195)');
+        menu.style.color = 'rgb(254,235,195)';
+        returnS.style.color = 'rgb(254,235,195)';
+        link1.style.color = 'black';
+        link2.style.color = 'black';
+        link3.style.color = 'black';
+        modeText.innerText = 'LIGHT';
+        modeText.style.color = 'rgb(254,235,195)';
+        modeCircle.style.backgroundColor = 'rgb(254,235,195)';
+
+        for(var i=0; i<texts.length; i++){
+            if (i > 1){
+                texts[i].style.color = 'rgb(254,235,195)';
+            }
+        }
+
+
+        for(var i=0; i<navlinks.length; i++){
+            navlinks[i].style.color = 'black';
+       }
 
         check = true
     }
@@ -89,29 +134,82 @@ link3.addEventListener('mouseout', link3out);
 
 
 function link1over(){
-    logo1.style.color = 'rgb(254,235,195)';
+        
+    /*this is the DARK background*/
+    if (check){
+        logo1.style.color = 'rgb(254,235,195)';
+        link1.style.color = 'rgb(254,235,195)';
+    }
+    
+    /*this is the LIGHT background*/
+    else{
+        logo1.style.color = 'black';
+        link1.style.color = 'black';
+    }
 }
 
 function link1out(){
-    logo1.style.color = 'rgb(187,2,39)';
+    /*this is the DARK background*/
+    if (check){
+        logo1.style.color = 'rgb(187,2,39)';
+        link1.style.color = 'black';
+    }
+
+    /*this is the LIGHT background*/
+    else{
+        link1.style.color = 'rgb(254,235,195)';
+        logo1.style.color = 'rgb(187,2,39)';
+    }
 }
 
 
 
 function link2over(){
-    logo2.style.color = 'rgb(254,235,195)';
+    if (check){
+        logo2.style.color = 'rgb(254,235,195)';
+        link2.style.color = 'rgb(254,235,195)';
+    }
+    
+    else{
+        logo2.style.color = 'black';
+        link2.style.color = 'black';
+    }
 }
 
 function link2out(){
-    logo2.style.color = 'rgb(187,2,39)';
+    if (check){
+        logo2.style.color = 'rgb(187,2,39)';
+        link2.style.color = 'black';
+    }
+
+    else{
+        link2.style.color = 'rgb(254,235,195)';
+        logo2.style.color = 'rgb(187,2,39)';
+    }
 }
 
 
 
 function link3over(){
-    logo3.style.color = 'rgb(254,235,195)';
+    if (check){
+        logo3.style.color = 'rgb(254,235,195)';
+        link3.style.color = 'rgb(254,235,195)';
+    }
+    
+    else{
+        logo3.style.color = 'black';
+        link3.style.color = 'black';
+    }
 }
 
 function link3out(){
-    logo3.style.color = 'rgb(187,2,39)';
+    if (check){
+        logo3.style.color = 'rgb(187,2,39)';
+        link3.style.color = 'black';
+    }
+
+    else{
+        link3.style.color = 'rgb(254,235,195)';
+        logo3.style.color = 'rgb(187,2,39)';
+    }
 }

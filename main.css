@@ -59,7 +59,7 @@ html{
 
 /*P in BUTTON*/
 #modeText{
-    color: black;
+    color: rgb(254,235,195);
     font-size: 15px;
     grid-area: text;
     font-weight: bold;
@@ -310,7 +310,7 @@ li{
 }
 
 footer{
-    width: 90%;
+    width: 85%;
     float: right;
 }
 
