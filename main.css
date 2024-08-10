@@ -8,7 +8,7 @@ html{
 
 /*MOUSE FOLLOW*/
 #move{
-    background: radial-gradient(rgb(187,2,39, 0.25), rgb(187,2,39, 0.15), rgb(187,2,39, 0.0));
+    background: radial-gradient(rgb(187,2,39, 0.25), rgb(187,2,39, 0.1), rgb(187,2,39, 0.05));
     height: 950px;
     aspect-ratio: 1;
     left: 50%;
@@ -17,6 +17,7 @@ html{
     position: fixed;
     border-radius: 50%;
     z-index: -1000;
+    border: 0;
 }
 
 /*h1 at the top of the page*/
@@ -30,9 +31,53 @@ html{
 }
 
 @keyframes hanimation{
-    0% {color: rgb(254,235,195);}
-    50% {color: rgb(187,2,39);}
-    100% {color: rgb(254,235,195);}
+    0% {color: var(--first);}
+    50% {color: var(--second);}
+    100% {color: var(--first);}
+}
+
+:root{
+    --second: rgb(187,2,39);
+    --first: rgb(254,235,195);
+}
+
+
+
+/*BUTTON for mode*/
+#mode{
+    background-color: rgb(187,2,39);
+    border: 0;
+    border-radius: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 'circle text';
+    margin-left: 90%;
+    grid-gap: 10px;
+}
+
+/*P in BUTTON*/
+#modeText{
+    color: black;
+    font-size: 15px;
+    grid-area: text;
+    font-weight: bold;
+    font-family: Merriweather;
+}
+
+/*DIV for CIRCLE in the BUTTON*/
+#modeCircle{
+    background-color: rgb(254,235,195);
+    z-index: 999;
+    height: 40px;
+    aspect-ratio: 1;
+    display: block;
+    font-size: 99px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 5px;
+    grid-area: circle;
 }
 
 #menu{
