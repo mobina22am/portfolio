@@ -3,10 +3,10 @@
 <html>
     <head>
         <title>this is the second attempt</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="mainDesktop.css" media="screen and (min-width:1181px)">
+        <link rel="stylesheet" href="mainTablet.css" media="screen and (min-width:481px) and (max-width:1180px)">
         <script src="main.js" defer></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <meta name="viewport" content="width=device-width">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -24,11 +24,11 @@
                 <div id="modeCircle">
             </button>
 
-            <i class="bx bx-menu bx-lg" id="menu"></i>
-            <i class='bx bx-left-arrow-alt bx-lg' id="return"></i>
+            <i class="bx bx-menu" id="menu"></i>
+            <i class='bx bx-left-arrow-alt' id="return"></i>
 
             <div id="headerNavigation">
-
+                <nav>
                     <ul id="headerList">
                         <li><a class="headerLink" href="#about">ABOUT</a></li>
                         <li><a class="headerLink" href="#education">EDUCATION</a></li>
@@ -50,6 +50,7 @@
 
         <section>
             <div id="about">
+                <h1>About</h1>
                 <article>
                     <p>Graduate software engineer based in London</p>
                     <p>22 years old</p>
@@ -59,6 +60,7 @@
 
 
             <div id="education">
+                <h1>Education</h1>
                 <article>
                     <p>Graduated from Queen Mary University of London with first class BSc in computer scinece</p>
                     <p>Gained 4 medals in 2 maths challenges and competitions (IMC - Gold, WMC - Silver + Bronze, UK maths challenge Silver)</p>
@@ -67,6 +69,7 @@
             </div>
 
             <div id="experience">
+                <h1>Experience</h1>
                 <article id="experienceArticle">
 
                     <div id="experienceText">
@@ -92,6 +95,7 @@
         </section>
 
         <footer id="footer">
+
             <nav>
                 <ul id="footerList">
                     <li class="footerLi">

@@ -88,6 +88,10 @@ document.body.onpointermove = event => {
 
 }
 
+
+
+
+
 /*these are the functionality of the menu button*/
 let menu = document.getElementById('menu');
 let returnS = document.getElementById('return');
