@@ -1,7 +1,12 @@
 body{
-    background-color: wheat;
+    background-color: black;
     width: 100%;
 }
+
+html{
+    width: 100%;
+}
+
 
 /*MOUSE FOLLOW*/
 #move{
@@ -144,8 +149,6 @@ h1{
 
 
 
-
-
 /*figure for the header images*/
 #headerImages{
     display: grid;
@@ -181,8 +184,6 @@ h1{
 
 
 
-
-
 /*p in the html*/
 p{
     color: rgb(254,235,195);
@@ -194,8 +195,6 @@ p{
 
 
 
-
-
 /*section in the html*/
 section{
     width: 90%;
@@ -203,14 +202,15 @@ section{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: 'about .'
+    grid-template-areas: 
+    'about .'
     '. education'
     'experience experience';
     grid-gap: 450px;
     margin-top: 100px;
     margin-bottom: 300px;
+    margin-right: 50px;
 }
-
 
 
 
@@ -224,9 +224,6 @@ section{
 #education{
     grid-area: education;
 }
-
-
-
 
 
 

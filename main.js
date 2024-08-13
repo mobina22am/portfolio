@@ -217,3 +217,127 @@ function link3out(){
         logo3.style.color = 'rgb(187,2,39)';
     }
 }
+
+
+
+
+
+/*this is the navigation change colour*/
+let headerLink1 = document.getElementById('headerLink1');
+let headerLink2 = document.getElementById('headerLink2');
+let headerLink3 = document.getElementById('headerLink3');
+let headerLink4 = document.getElementById('headerLink4');
+
+headerLink1.addEventListener('mouseover', headerLinkOver1);
+headerLink1.addEventListener('mouseout', headerLinkOut1);
+
+headerLink2.addEventListener('mouseover', headerLinkOver2);
+headerLink2.addEventListener('mouseout', headerLinkOut2);
+
+headerLink3.addEventListener('mouseover', headerLinkOver3);
+headerLink3.addEventListener('mouseout', headerLinkOut3);
+
+headerLink4.addEventListener('mouseover', headerLinkOver4);
+headerLink4.addEventListener('mouseout', headerLinkOut4);
+
+
+
+function headerLinkOver1(){
+        
+    /*this is the DARK background*/
+    if (check){
+        headerLink1.style.color = 'rgb(254,235,195)';
+    }
+    
+    /*this is the LIGHT background*/
+    else{
+        headerLink1.style.color = 'black';
+    }
+}
+
+function headerLinkOut1(){
+    /*this is the DARK background*/
+    if (check){
+        headerLink1.style.color = 'black';
+    }
+
+    /*this is the LIGHT background*/
+    else{
+        headerLink1.style.color = 'rgb(254,235,195)';
+    }
+}
+
+
+
+
+
+
+function headerLinkOver2(){
+        
+    if (check){
+        headerLink2.style.color = 'rgb(254,235,195)';
+    }
+    
+    else{
+        headerLink2.style.color = 'black';
+    }
+}
+
+
+function headerLinkOut2(){
+    if (check){
+        headerLink2.style.color = 'black';
+    }
+
+    else{
+        headerLink2.style.color = 'rgb(254,235,195)';
+    }
+}
+
+
+
+function headerLinkOver3(){
+        
+    if (check){
+        headerLink3.style.color = 'rgb(254,235,195)';
+    }
+    
+    else{
+        headerLink3.style.color = 'black';
+    }
+}
+
+
+function headerLinkOut3(){
+    if (check){
+        headerLink3.style.color = 'black';
+    }
+
+    else{
+        headerLink3.style.color = 'rgb(254,235,195)';
+    }
+}
+
+
+
+function headerLinkOver4(){
+        
+    if (check){
+        headerLink4.style.color = 'rgb(254,235,195)';
+    }
+    
+    else{
+        headerLink4.style.color = 'black';
+    }
+}
+
+
+function headerLinkOut4(){
+    if (check){
+        headerLink4.style.color = 'black';
+    }
+
+    else{
+        headerLink4.style.color = 'rgb(254,235,195)';
+    }
+}
